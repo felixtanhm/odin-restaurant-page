@@ -5,7 +5,7 @@ import loadContact from "./contact";
 const createHeader = () => {
   const header = document.createElement("header");
   const title = document.createElement("h1");
-  title.textContent = "Druggists";
+  title.textContent = "Odin's Restaurant";
   header.appendChild(title);
   header.appendChild(createNav());
   return header;
@@ -64,7 +64,6 @@ const setBtnActive = (targetBtn) => {
 };
 
 const initWebsite = () => {
-  console.log("hi initwebsite");
   const body = document.getElementById("content");
   body.appendChild(createHeader());
   body.appendChild(createMain());
